@@ -15,7 +15,7 @@ services:
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"  
     networks:
        NETWORK:
-          ipv4_address: 172.21.0.11
+          ipv4_address: 172.21.0.15
 
  certbot:
     container_name: certbot
